@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat: moved some central activities to here">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="ci: gitops test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="1-project-setup" />
+        <entry key="$PROJECT_DIR$" value="5-move-jsonmapper-to-commons" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,27 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Dev/leagueapi/commons/src/main/java/at/adesso/leagueapi/commons&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;99703cc56f6540074ac680aa7f5d7568&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Dev/leagueapi/commons/.github/workflows",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable",
+    "spring.configuration.checksum": "99703cc56f6540074ac680aa7f5d7568"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\leagueapi\commons\src\main\java\at\adesso\leagueapi\commons\mapper" />
       <recent name="C:\Dev\leagueapi\commons\src\main\java\at\adesso\leagueapi\commons" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -93,7 +91,11 @@
       <workItem from="1681978818732" duration="4304000" />
       <workItem from="1681983412129" duration="4447000" />
       <workItem from="1682063184433" duration="708000" />
-      <workItem from="1682321628126" duration="2418000" />
+      <workItem from="1682321628126" duration="3906000" />
+      <workItem from="1682420420252" duration="1983000" />
+      <workItem from="1682424231580" duration="602000" />
+      <workItem from="1682426011494" duration="1971000" />
+      <workItem from="1682512357695" duration="375000" />
     </task>
     <task id="LOCAL-00001" summary="// feat: project setup">
       <created>1681893820721</created>
@@ -109,7 +111,28 @@
       <option name="project" value="LOCAL" />
       <updated>1681992252781</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: moved json mapper to commons">
+      <created>1682326246526</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682326246526</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: moved json mapper to commons">
+      <created>1682512616321</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682512616321</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ci: added workflow files">
+      <created>1682512629736</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682512629736</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +152,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="// feat: project setup" />
     <MESSAGE value="feat: moved some central activities to here" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: moved some central activities to here" />
+    <MESSAGE value="feat: moved json mapper to commons" />
+    <MESSAGE value="ci: added workflow files" />
+    <MESSAGE value="ci: gitops test" />
+    <option name="LAST_COMMIT_MESSAGE" value="ci: gitops test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
