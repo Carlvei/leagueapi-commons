@@ -8,5 +8,4 @@ public class ResourceNotFoundException extends ApiException {
     public ResourceNotFoundException() {
         super(CommonError.RESOURCE_NOT_FOUND);
     }
-
 }
