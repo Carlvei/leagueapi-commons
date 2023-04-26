@@ -21,7 +21,6 @@
         <snakeyaml.version>2.0</snakeyaml.version>
     </properties>
 
-
     <dependencies>
         <!-- Spring dependencies-->
         <dependency>
