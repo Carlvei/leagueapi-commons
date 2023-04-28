@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="ci: gitops test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="chore: deleted security and web deps" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="7-setup-workflows" />
+        <entry key="$PROJECT_DIR$" value="9-gitops-test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +59,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;,
@@ -102,6 +100,10 @@
       <workItem from="1682514301225" duration="3000" />
       <workItem from="1682514317010" duration="642000" />
       <workItem from="1682515098604" duration="134000" />
+      <workItem from="1682515245960" duration="934000" />
+      <workItem from="1682580784006" duration="1962000" />
+      <workItem from="1682585320554" duration="1935000" />
+      <workItem from="1682666445116" duration="644000" />
     </task>
     <task id="LOCAL-00001" summary="// feat: project setup">
       <created>1681893820721</created>
@@ -159,7 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682513037305</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="chore: bumped version">
+      <created>1682515473432</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682515473432</updated>
+    </task>
+    <task id="LOCAL-00010" summary="chore: deleted security and web deps">
+      <created>1682667082752</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682667082752</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +198,9 @@
     <MESSAGE value="feat: moved json mapper to commons" />
     <MESSAGE value="ci: added workflow files" />
     <MESSAGE value="ci: gitops test" />
-    <option name="LAST_COMMIT_MESSAGE" value="ci: gitops test" />
+    <MESSAGE value="chore: bumped version" />
+    <MESSAGE value="chore: deleted security and web deps" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: deleted security and web deps" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
