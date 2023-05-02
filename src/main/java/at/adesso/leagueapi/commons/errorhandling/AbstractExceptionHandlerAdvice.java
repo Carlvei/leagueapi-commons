@@ -3,6 +3,7 @@ package at.adesso.leagueapi.commons.errorhandling;
 import at.adesso.leagueapi.commons.errorhandling.error.CommonError;
 import at.adesso.leagueapi.commons.errorhandling.error.Error;
 import at.adesso.leagueapi.commons.errorhandling.exceptions.ApiException;
+import at.adesso.leagueapi.commons.errorhandling.exceptions.UnauthorizedAccessException;
 import at.adesso.leagueapi.commons.errorhandling.model.ErrorResponse;
 import at.adesso.leagueapi.commons.util.HttpHeadersBuilder;
 import org.slf4j.Logger;
@@ -47,6 +48,12 @@ public abstract class AbstractExceptionHandlerAdvice {
     protected ResponseEntity<Object> handleAccessDeniedException(final AccessDeniedException exception) {
         return handleException(CommonError.ACCESS_DENIED, exception,
                 () -> responseFactory.createErrorResponse(CommonError.ACCESS_DENIED));
+    }
+
+    @ExceptionHandler(value = {UnauthorizedAccessException.class})
+    protected ResponseEntity<Object> handleAccessDeniedException(final UnauthorizedAccessException exception) {
+        return handleException(CommonError.UNAUTHORIZED, exception,
+                () -> responseFactory.createErrorResponse(CommonError.UNAUTHORIZED, exception.getDetails()));
     }
 
 

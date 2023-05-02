@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat: added errormessages">
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exceptions/ValidationFailedException.java" afterDir="false" />
+    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat: added ValidationFailedException">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="19-add-messages-to-resourcenotfound-and-unauthorizedaccess-exceptions" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -109,7 +109,7 @@
       <workItem from="1682514317010" duration="642000" />
       <workItem from="1682515098604" duration="134000" />
       <workItem from="1683013557647" duration="610000" />
-      <workItem from="1683016215890" duration="4641000" />
+      <workItem from="1683016215890" duration="8188000" />
     </task>
     <task id="LOCAL-00001" summary="// feat: project setup">
       <created>1681893820721</created>
@@ -195,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683025708139</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: added ValidationFailedException">
+      <created>1683028506911</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683028506911</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +228,8 @@
     <MESSAGE value="feat: moved jwt utils to commons" />
     <MESSAGE value="feat: added jjwt jackson dep" />
     <MESSAGE value="feat: added errormessages" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added errormessages" />
+    <MESSAGE value="feat: added ValidationFailedException" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added ValidationFailedException" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
