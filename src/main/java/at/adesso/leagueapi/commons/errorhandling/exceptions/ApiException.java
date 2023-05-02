@@ -1,4 +1,4 @@
-package at.adesso.leagueapi.commons.errorhandling.exception;
+package at.adesso.leagueapi.commons.errorhandling.exceptions;
 
 import at.adesso.leagueapi.commons.errorhandling.error.Error;
 import lombok.Getter;

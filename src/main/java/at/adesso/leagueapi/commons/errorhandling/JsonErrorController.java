@@ -1,7 +1,7 @@
 package at.adesso.leagueapi.commons.errorhandling;
 
-import at.adesso.leagueapi.commons.errorhandling.exception.ResourceNotFoundException;
-import at.adesso.leagueapi.commons.errorhandling.exception.TechnicalException;
+import at.adesso.leagueapi.commons.errorhandling.exceptions.ResourceNotFoundException;
+import at.adesso.leagueapi.commons.errorhandling.exceptions.TechnicalException;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;

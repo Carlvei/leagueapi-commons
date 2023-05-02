@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="ci: gitops test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exceptions/UnauthorizedAccessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/security/Encryptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/util/jwt/AbstractJwtConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/util/jwt/JwtTokenGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/util/jwt/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/util/jwt/JwtTokenValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/ErrorResponseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/ErrorResponseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/JsonErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/JsonErrorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exception/ApiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exceptions/ApiException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exception/TechnicalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exceptions/TechnicalException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="7-setup-workflows" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,32 +62,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Dev/leagueapi/commons/.github/workflows&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;99703cc56f6540074ac680aa7f5d7568&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Dev/leagueapi/commons/src/main/java/at/adesso/leagueapi/commons/util/jwt",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable",
+    "spring.configuration.checksum": "99703cc56f6540074ac680aa7f5d7568"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\leagueapi\commons\src\main\java\at\adesso\leagueapi\commons\util\jwt" />
       <recent name="C:\Dev\leagueapi\commons\.github\workflows" />
       <recent name="C:\Dev\leagueapi\commons\src\main\java\at\adesso\leagueapi\commons\mapper" />
       <recent name="C:\Dev\leagueapi\commons\src\main\java\at\adesso\leagueapi\commons" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="at.adesso.leagueapi.commons.util.jwt" />
+      <recent name="at.adesso.leagueapi.commons.security" />
       <recent name="at.adesso.leagueapi.commons.util" />
       <recent name="at.adesso.leagueapi.commons.mapper" />
     </key>
@@ -102,6 +118,8 @@
       <workItem from="1682514301225" duration="3000" />
       <workItem from="1682514317010" duration="642000" />
       <workItem from="1682515098604" duration="134000" />
+      <workItem from="1683013557647" duration="610000" />
+      <workItem from="1683016215890" duration="1474000" />
     </task>
     <task id="LOCAL-00001" summary="// feat: project setup">
       <created>1681893820721</created>
