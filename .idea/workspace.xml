@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat: moved jwt utils to commons">
+    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat: added jjwt jackson dep">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exceptions/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exceptions/UnauthorizedAccessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exceptions/UnauthorizedAccessException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +109,7 @@
       <workItem from="1682514317010" duration="642000" />
       <workItem from="1682515098604" duration="134000" />
       <workItem from="1683013557647" duration="610000" />
-      <workItem from="1683016215890" duration="1788000" />
+      <workItem from="1683016215890" duration="2977000" />
     </task>
     <task id="LOCAL-00001" summary="// feat: project setup">
       <created>1681893820721</created>
@@ -171,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683024170055</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: added jjwt jackson dep">
+      <created>1683024655939</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683024655939</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +205,8 @@
     <MESSAGE value="ci: added workflow files" />
     <MESSAGE value="ci: gitops test" />
     <MESSAGE value="feat: moved jwt utils to commons" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: moved jwt utils to commons" />
+    <MESSAGE value="feat: added jjwt jackson dep" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added jjwt jackson dep" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
