@@ -2,7 +2,7 @@ package at.adesso.leagueapi.commons.errorhandling;
 
 import at.adesso.leagueapi.commons.errorhandling.error.CommonError;
 import at.adesso.leagueapi.commons.errorhandling.error.Error;
-import at.adesso.leagueapi.commons.errorhandling.exception.ApiException;
+import at.adesso.leagueapi.commons.errorhandling.exceptions.ApiException;
 import at.adesso.leagueapi.commons.errorhandling.model.ErrorResponse;
 import at.adesso.leagueapi.commons.util.HttpHeadersBuilder;
 import org.slf4j.Logger;
