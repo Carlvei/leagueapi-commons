@@ -6,7 +6,7 @@
 
     <groupId>at.adesso.leagueapi</groupId>
     <artifactId>commons</artifactId>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
 
     <properties>
         <java.version>17.0.2</java.version>
@@ -21,6 +21,7 @@
         <snakeyaml.version>2.0</snakeyaml.version>
         <jjwt.version>0.11.5</jjwt.version>
         <jasypt-spring-boot-starter.version>3.0.5</jasypt-spring-boot-starter.version>
+        <jackson-databind.version>2.15.0</jackson-databind.version>
     </properties>
 
     <dependencies>
@@ -67,6 +68,18 @@
             <artifactId>jjwt-impl</artifactId>
             <version>${jjwt.version}</version>
             <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId>
+            <version>${jjwt.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- Override default because of vulnerability with jjwt-jackson -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databind.version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.ulisesbocchio</groupId>
