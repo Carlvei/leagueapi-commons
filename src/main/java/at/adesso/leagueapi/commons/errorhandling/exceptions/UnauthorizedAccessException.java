@@ -6,4 +6,8 @@ public class UnauthorizedAccessException extends ApiException {
     public UnauthorizedAccessException() {
         super(CommonError.UNAUTHORIZED);
     }
+
+    public UnauthorizedAccessException(final String message) {
+        super(CommonError.UNAUTHORIZED, message);
+    }
 }
