@@ -1,5 +1,6 @@
 package at.adesso.leagueapi.commons.util.jwt;
 
+import at.adesso.leagueapi.commons.domain.Role;
 import at.adesso.leagueapi.commons.security.Encryptor;
 import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,9 +20,10 @@ public class JwtTokenGenerator extends AbstractJwtConfig {
         super(encryptedPassword, encryptor);
     }
 
-    public String generateToken(final String userId) {
+    public String generateToken(final String userId, final Role role) {
         return Jwts.builder()
-                .claim("userId", userId)
+                .claim(JwtTokenUtil.USER_ID_TOKEN_PARAMETER_NAME, userId)
+                .claim(JwtTokenUtil.ROLE_TOKEN_PARAMETER_NAME, role)
                 .setIssuedAt(Date.from(LocalDateTime.now()
                         .atZone(ZoneId.systemDefault())
                         .toInstant()))
