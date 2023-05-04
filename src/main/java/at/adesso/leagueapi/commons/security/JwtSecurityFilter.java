@@ -7,6 +7,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -23,12 +24,15 @@ public class JwtSecurityFilter extends OncePerRequestFilter {
 
     public final static String ACCESS_TOKEN_NAME = "leagueapi_access_token";
     private final JwtTokenValidator jwtTokenValidator;
-
     private final JwtTokenUtil jwtTokenUtil;
+    private final List<String> pathsWithoutAuthentication;
 
-    public JwtSecurityFilter(JwtTokenValidator jwtTokenValidator, JwtTokenUtil jwtTokenUtil) {
+    public JwtSecurityFilter(final JwtTokenValidator jwtTokenValidator,
+                             final JwtTokenUtil jwtTokenUtil,
+                             @Value("${leagueapi.services.paths-without-authentication:#{T(java.util.Collections).emptyList()}}") final List<String> pathsWithoutAuthentication) {
         this.jwtTokenValidator = jwtTokenValidator;
         this.jwtTokenUtil = jwtTokenUtil;
+        this.pathsWithoutAuthentication = pathsWithoutAuthentication;
     }
 
     @Override
@@ -40,7 +44,7 @@ public class JwtSecurityFilter extends OncePerRequestFilter {
                 .findFirst();
 
         String token = null;
-        if (accessTokenCookie.isEmpty()) {
+        if (accessTokenCookie.isEmpty() || pathsWithoutAuthentication.contains(request.getPathInfo())) {
             filterChain.doFilter(request, response);
             return;
         } else {
