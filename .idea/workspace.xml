@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat: added handling for unauthorized access exception">
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/domain/Role.java" afterDir="false" />
+    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat:  new jwt methods">
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/security/JwtSecurityFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/security/UserContextHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/util/jwt/JwtTokenGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/util/jwt/JwtTokenGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/util/jwt/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/util/jwt/JwtTokenUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,9 +79,9 @@
       <recent name="C:\Dev\leagueapi\commons\src\main\java\at\adesso\leagueapi\commons" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="at.adesso.leagueapi.commons.security" />
       <recent name="at.adesso.leagueapi.commons.errorhandling.exceptions" />
       <recent name="at.adesso.leagueapi.commons.util.jwt" />
-      <recent name="at.adesso.leagueapi.commons.security" />
       <recent name="at.adesso.leagueapi.commons.util" />
       <recent name="at.adesso.leagueapi.commons.mapper" />
     </key>
@@ -114,7 +111,9 @@
       <workItem from="1682515098604" duration="134000" />
       <workItem from="1683013557647" duration="610000" />
       <workItem from="1683016215890" duration="8799000" />
-      <workItem from="1683106038420" duration="2353000" />
+      <workItem from="1683106038420" duration="3098000" />
+      <workItem from="1683184267080" duration="2465000" />
+      <workItem from="1683191742642" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="// feat: project setup">
       <created>1681893820721</created>
@@ -214,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683033690402</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat:  new jwt methods">
+      <created>1683109452250</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683109452250</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +231,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/26-add-jwt-get-user-id-und-role-method" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -242,7 +260,8 @@
     <MESSAGE value="feat: added errormessages" />
     <MESSAGE value="feat: added ValidationFailedException" />
     <MESSAGE value="feat: added handling for unauthorized access exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added handling for unauthorized access exception" />
+    <MESSAGE value="feat:  new jwt methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  new jwt methods" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
