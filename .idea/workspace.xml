@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat: added ValidationFailedException">
+    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat:  new jwt methods">
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/security/JwtSecurityFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/security/UserContextHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -27,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="24-add-unauthorized-access-exception-handling" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,25 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Dev/leagueapi/commons/src/main/java/at/adesso/leagueapi/commons/util/jwt",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable",
-    "spring.configuration.checksum": "99703cc56f6540074ac680aa7f5d7568"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Dev/leagueapi/commons/src/main/java/at/adesso/leagueapi/commons/util/jwt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;99703cc56f6540074ac680aa7f5d7568&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Dev\leagueapi\commons\src\main\java\at\adesso\leagueapi\commons\util\jwt" />
@@ -78,9 +79,9 @@
       <recent name="C:\Dev\leagueapi\commons\src\main\java\at\adesso\leagueapi\commons" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="at.adesso.leagueapi.commons.security" />
       <recent name="at.adesso.leagueapi.commons.errorhandling.exceptions" />
       <recent name="at.adesso.leagueapi.commons.util.jwt" />
-      <recent name="at.adesso.leagueapi.commons.security" />
       <recent name="at.adesso.leagueapi.commons.util" />
       <recent name="at.adesso.leagueapi.commons.mapper" />
     </key>
@@ -109,7 +110,10 @@
       <workItem from="1682514317010" duration="642000" />
       <workItem from="1682515098604" duration="134000" />
       <workItem from="1683013557647" duration="610000" />
-      <workItem from="1683016215890" duration="8188000" />
+      <workItem from="1683016215890" duration="8799000" />
+      <workItem from="1683106038420" duration="3098000" />
+      <workItem from="1683184267080" duration="2465000" />
+      <workItem from="1683191742642" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="// feat: project setup">
       <created>1681893820721</created>
@@ -202,7 +206,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683028506911</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: added handling for unauthorized access exception">
+      <created>1683033690401</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683033690402</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat:  new jwt methods">
+      <created>1683109452250</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683109452250</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +231,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/26-add-jwt-get-user-id-und-role-method" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -229,7 +259,9 @@
     <MESSAGE value="feat: added jjwt jackson dep" />
     <MESSAGE value="feat: added errormessages" />
     <MESSAGE value="feat: added ValidationFailedException" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added ValidationFailedException" />
+    <MESSAGE value="feat: added handling for unauthorized access exception" />
+    <MESSAGE value="feat:  new jwt methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  new jwt methods" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
