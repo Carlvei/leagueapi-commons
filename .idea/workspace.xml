@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat: changed security to cookies">
+    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat: added paths without authentication to jwt security filter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/security/JwtSecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/security/JwtSecurityFilter.java" afterDir="false" />
@@ -114,7 +114,9 @@
       <workItem from="1683106038420" duration="3098000" />
       <workItem from="1683184267080" duration="2465000" />
       <workItem from="1683191742642" duration="1295000" />
-      <workItem from="1683195835001" duration="1948000" />
+      <workItem from="1683195835001" duration="3428000" />
+      <workItem from="1683533021676" duration="3600000" />
+      <workItem from="1683790820151" duration="949000" />
     </task>
     <task id="LOCAL-00001" summary="// feat: project setup">
       <created>1681893820721</created>
@@ -228,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683194263492</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: added paths without authentication to jwt security filter">
+      <created>1683199814948</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1683199814948</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +279,8 @@
     <MESSAGE value="feat: added handling for unauthorized access exception" />
     <MESSAGE value="feat:  new jwt methods" />
     <MESSAGE value="feat: changed security to cookies" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: changed security to cookies" />
+    <MESSAGE value="feat: added paths without authentication to jwt security filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added paths without authentication to jwt security filter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
