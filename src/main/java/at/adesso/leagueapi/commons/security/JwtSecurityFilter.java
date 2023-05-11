@@ -39,12 +39,18 @@ public class JwtSecurityFilter extends OncePerRequestFilter {
     protected void doFilterInternal(final HttpServletRequest request,
                                     final HttpServletResponse response,
                                     final FilterChain filterChain) throws ServletException, IOException {
-        final Optional<Cookie> accessTokenCookie = Arrays.stream(request.getCookies())
-                .filter(cookie -> cookie.getName().equals(ACCESS_TOKEN_NAME))
-                .findFirst();
-
+        final Optional<Cookie> accessTokenCookie;
+        if (request.getCookies() == null || pathsWithoutAuthentication.contains(request.getPathInfo())) {
+            filterChain.doFilter(request, response);
+            return;
+        } else {
+            accessTokenCookie = Arrays.stream(request.getCookies())
+                    .filter(cookie -> cookie.getName().equals(ACCESS_TOKEN_NAME))
+                    .findFirst();
+        }
+        
         String token = null;
-        if (accessTokenCookie.isEmpty() || pathsWithoutAuthentication.contains(request.getPathInfo())) {
+        if (accessTokenCookie.isEmpty()) {
             filterChain.doFilter(request, response);
             return;
         } else {
