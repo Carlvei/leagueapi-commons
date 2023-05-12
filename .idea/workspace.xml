@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat: added paths without authentication to jwt security filter">
+    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="fix: fixed bug when loading empty cookies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/security/JwtSecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/security/JwtSecurityFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="26-add-jwt-get-user-id-und-role-method" />
+        <entry key="$PROJECT_DIR$" value="28-add-paths-without-authentication-to-jwt-security-filter" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,7 +116,8 @@
       <workItem from="1683191742642" duration="1295000" />
       <workItem from="1683195835001" duration="3428000" />
       <workItem from="1683533021676" duration="3600000" />
-      <workItem from="1683790820151" duration="949000" />
+      <workItem from="1683790820151" duration="2192000" />
+      <workItem from="1683888223289" duration="1515000" />
     </task>
     <task id="LOCAL-00001" summary="// feat: project setup">
       <created>1681893820721</created>
@@ -237,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683199814948</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix: fixed bug when loading empty cookies">
+      <created>1683792401768</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683792401768</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +288,8 @@
     <MESSAGE value="feat:  new jwt methods" />
     <MESSAGE value="feat: changed security to cookies" />
     <MESSAGE value="feat: added paths without authentication to jwt security filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added paths without authentication to jwt security filter" />
+    <MESSAGE value="fix: fixed bug when loading empty cookies" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed bug when loading empty cookies" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
