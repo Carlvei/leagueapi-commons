@@ -6,6 +6,7 @@ import at.adesso.leagueapi.commons.errorhandling.exceptions.ApiException;
 import at.adesso.leagueapi.commons.errorhandling.exceptions.UnauthorizedAccessException;
 import at.adesso.leagueapi.commons.errorhandling.model.ErrorResponse;
 import at.adesso.leagueapi.commons.util.HttpHeadersBuilder;
+import jakarta.validation.ConstraintViolationException;
 import org.slf4j.Logger;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.http.HttpStatus;
@@ -80,6 +81,12 @@ public abstract class AbstractExceptionHandlerAdvice {
 
         return handleException(CommonError.VALIDATION_ERROR, exception,
                 () -> responseFactory.createErrorResponse(CommonError.VALIDATION_ERROR, validationErrors));
+    }
+
+    @ExceptionHandler(value = {ConstraintViolationException.class})
+    protected ResponseEntity<Object> handleConstraintViolationException(final ConstraintViolationException exception) {
+        return handleException(CommonError.VALIDATION_ERROR, exception,
+                () -> responseFactory.createErrorResponse(CommonError.VALIDATION_ERROR, List.of(exception.getMessage())));
     }
 
     @ExceptionHandler({HttpRequestMethodNotSupportedException.class})
