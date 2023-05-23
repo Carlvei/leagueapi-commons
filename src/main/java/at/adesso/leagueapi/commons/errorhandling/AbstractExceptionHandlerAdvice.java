@@ -54,7 +54,7 @@ public abstract class AbstractExceptionHandlerAdvice {
     @ExceptionHandler(value = {UnauthorizedAccessException.class})
     protected ResponseEntity<Object> handleAccessDeniedException(final UnauthorizedAccessException exception) {
         return handleException(CommonError.UNAUTHORIZED, exception,
-                () -> responseFactory.createErrorResponse(CommonError.UNAUTHORIZED, exception.getDetails()));
+                () -> responseFactory.createErrorResponse(exception.getError(), exception.getDetails()));
     }
 
 

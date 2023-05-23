@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="fix: fixed bug when loading empty cookies">
+    <list default="true" id="5e271ea7-7dfe-409a-890d-b4c96ef605ba" name="Changes" comment="feat: added errorhandling for contraint violations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/AbstractExceptionHandlerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exceptions/UnauthorizedAccessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/adesso/leagueapi/commons/errorhandling/exceptions/UnauthorizedAccessException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="28-add-paths-without-authentication-to-jwt-security-filter" />
+        <entry key="$PROJECT_DIR$" value="32-add-constraintviolationexception-rest-error-handling" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -117,7 +118,8 @@
       <workItem from="1683195835001" duration="3428000" />
       <workItem from="1683533021676" duration="3600000" />
       <workItem from="1683790820151" duration="2192000" />
-      <workItem from="1683888223289" duration="1515000" />
+      <workItem from="1683888223289" duration="2259000" />
+      <workItem from="1684842364744" duration="2313000" />
     </task>
     <task id="LOCAL-00001" summary="// feat: project setup">
       <created>1681893820721</created>
@@ -245,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683792401768</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat: added errorhandling for contraint violations">
+      <created>1683890806358</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683890806358</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +298,8 @@
     <MESSAGE value="feat: changed security to cookies" />
     <MESSAGE value="feat: added paths without authentication to jwt security filter" />
     <MESSAGE value="fix: fixed bug when loading empty cookies" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed bug when loading empty cookies" />
+    <MESSAGE value="feat: added errorhandling for contraint violations" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added errorhandling for contraint violations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
